@@ -317,7 +317,7 @@
     </properties>
     <!-- -->
     <build>
-        <finalName>lavagna</finalName>
+        <finalName>pms</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -480,40 +480,40 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.6</version>
-                <executions>
-                    <execution>
-                        <id>package-doc</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <skipAssembly>${fast-build}</skipAssembly>
-                            <descriptors>
-                                <descriptor>src/assembly/documentation.xml</descriptor>
-                            </descriptors>
-                            <finalName>lavagna-${project.version}</finalName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>package-war</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <skipAssembly>${fast-build}</skipAssembly>
-                            <descriptors>
-                                <descriptor>src/assembly/distribution.xml</descriptor>
-                            </descriptors>
-                            <finalName>lavagna-${project.version}</finalName>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<version>2.6</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>package-doc</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<skipAssembly>${fast-build}</skipAssembly>-->
+                            <!--<descriptors>-->
+                                <!--<descriptor>src/assembly/documentation.xml</descriptor>-->
+                            <!--</descriptors>-->
+                            <!--<finalName>lavagna-${project.version}</finalName>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                    <!--<execution>-->
+                        <!--<id>package-war</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<skipAssembly>${fast-build}</skipAssembly>-->
+                            <!--<descriptors>-->
+                                <!--<descriptor>src/assembly/distribution.xml</descriptor>-->
+                            <!--</descriptors>-->
+                            <!--<finalName>lavagna-${project.version}</finalName>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
 
             <plugin>
                 <groupId>ch.digitalfondue.stampo</groupId>
