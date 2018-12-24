@@ -826,7 +826,7 @@
                 <datasource.dialect>MYSQL</datasource.dialect>
                 <!-- <datasource.driver>net.sf.log4jdbc.sql.jdbcapi.DriverSpy</datasource.driver> -->
                 <!-- <datasource.url>jdbc:log4jdbc:mysql://localhost:3306/lavagna</datasource.url> -->
-                <datasource.url>jdbc:mysql://localhost:3306/lavagna</datasource.url>
+                <datasource.url>jdbc:mysql://localhost:3306/lavagna?useUnicode=true&amp;characterEncoding=utf8</datasource.url>
                 <datasource.username>pms123</datasource.username>
                 <datasource.password>pms456</datasource.password>
                 <spring.profiles.active>prod</spring.profiles.active>

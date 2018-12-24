@@ -57,6 +57,9 @@ public class LavagnaEnvironment {
         setSystemPropertyIfNull(environment, "datasource.password", "");
         setSystemPropertyIfNull(environment, "spring.profiles.active", "dev");
 
+        String url = environment.getProperty("datasource.url");
+        System.out.println(url);
+
         logUse("datasource.dialect");
         logUse("datasource.url");
         logUse("datasource.username");

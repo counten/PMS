@@ -11,7 +11,7 @@
 ```
 CREATE DATABASE lavagna CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user 'pms123'@'%' identified by 'pms456';
-grant all privileges on lavagna.* to “pms123”@”%” identified by “pms456”;
+grant all privileges on lavagna.* to "pms123"@"%" identified by "pms456";
 flush privileges;
 ```
 
