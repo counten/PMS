@@ -1,9 +1,10 @@
 ## 目录结构
+```
 /model      	模型文件
 /model_img		模型导出图片
 /pms 			项目代码
 /doc			包含视频，说明文档，PPT，组内评分表
-
+```
 
 ## Requirement
 1. JDK 1.8+
